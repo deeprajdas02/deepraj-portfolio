@@ -2,6 +2,7 @@ import { useEffect, useState, useRef, useMemo } from 'react';
 import { motion, useMotionValue, useTransform, useSpring } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Github, Linkedin, Mail, Download, ExternalLink, ChevronDown, MapPin, FolderOpen } from 'lucide-react';
+import deeprajProfileImg from '@/assets/deepraj-profile.jpg';
 
 // Enhanced 3D Background Layer Component - Immersive & Optimized
 function Enhanced3DBackgroundLayer() {
@@ -513,9 +514,9 @@ const Hero = () => {
             >
               {/* Clean portrait with natural pop-out and floating animation */}
               <motion.img
-                src="https://i.postimg.cc/zGS3tZ3N/IMG-4625-removebg-preview.png"
-                alt="Debanjan Das - Professional Portrait"
-                className="w-80 h-96 lg:w-96 lg:h-[500px] object-cover object-center relative z-10 rounded-lg"
+                src={deeprajProfileImg}
+                alt="Deepraj Das - Professional Portrait"
+                className="w-80 h-96 lg:w-96 lg:h-[500px] object-cover object-center relative z-10 rounded-lg border-4 border-white/10 shadow-2xl"
                 style={{
                   filter: 'drop-shadow(0 20px 40px rgba(0, 0, 0, 0.5)) drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3))',
                   background: 'transparent'
